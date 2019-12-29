@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import Webchat from "./webchat"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -36,7 +35,6 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <Webchat />
         <footer>
           The Nerdy Python © {new Date().getFullYear()}, Built with
           {` `}
