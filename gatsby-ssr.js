@@ -9,7 +9,7 @@ export const onRenderBody = ({ setPreBodyComponents }) => {
             __html: `
             WebChat.default.init({
                 selector: "#webchat",
-                initPayload: "/help",
+                initPayload: "/whoami",
                 profileAvatar: 'https://i.imgur.com/gUT7DrZ.jpg',
                 customData: {"language": "en"}, 
                 socketUrl: "https://woz.thenerdypython.com",
