@@ -10,11 +10,24 @@ export const onRenderBody = ({ setPreBodyComponents }) => {
             WebChat.default.init({
                 selector: "#webchat",
                 initPayload: "/help",
-                customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+                profileAvatar: 'https://i.imgur.com/gUT7DrZ.jpg',
+                customData: {"language": "en"}, 
                 socketUrl: "https://woz.thenerdypython.com",
                 socketPath: "/socket.io/",
                 title: "Nerdy Chat",
-                })
+                inputTextFieldHint: "Type a message...",
+                connectingText: "Waiting for server...",
+                embedded: false,
+                params: {
+                    images: {
+                        dims: {
+                        width: 300,
+                        height: 200
+                        }
+                    }
+                },
+                storage: "local",
+            })
             `,
         }}
     />
